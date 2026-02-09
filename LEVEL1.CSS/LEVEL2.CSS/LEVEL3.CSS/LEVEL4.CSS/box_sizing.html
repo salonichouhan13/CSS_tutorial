@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border radius</title>
+</head>
+<style>
+    .border{
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+        padding: 2px;
+    }
+    #first{
+        /* box-sizing: content-box; */
+        /* box-sizing: content-box; */
+        border: 2px solid;
+        border-radius: 3px 4px 5px 6px;
+        background-color: darkmagenta;
+    }
+    #second{
+        box-sizing: border-box;
+        border: 3px dashed;
+        border-radius: 5px;
+        background-color: darkorchid;
+
+    }
+</style>
+<body>
+ <div id="first" class="border">first checker</div>
+    <div id="second" class="border">second checker</div>
+    
+</body>
+</html>
