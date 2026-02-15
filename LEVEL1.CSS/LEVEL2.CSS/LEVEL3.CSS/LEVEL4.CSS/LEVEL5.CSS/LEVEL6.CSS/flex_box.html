@@ -1,0 +1,580 @@
+<!--flex box direction-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox direction</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        border: 3px solid black;
+        margin-right: 5px;
+
+    }
+    #heading{
+        margin-left: 200px;
+    }
+    #container{
+        height: 450px;
+        width: 600px;
+        padding: 10px;
+        margin: 10px;
+        
+        border: 3px solid black;
+
+        display: flex;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+        background-color: aquamarine;
+    }
+    #box1{
+        background-color: chocolate;
+    }
+    #box2{
+        background-color: chartreuse;
+    }
+    #box3{
+        background-color: darkmagenta;
+    }
+    #box4{
+        background-color: lightcoral;
+    }
+</style>
+<body>
+    <h1 id="heading">flex container</h1>
+    <div id="container">
+        <div id="box1" class="box">flex box1</div>
+        <div id="box2" class="box">flex box2</div>
+        <div id="box3" class="box">flex box3</div>
+        <div id="box4" class="box">flex box4</div>
+    </div>
+</body>
+</html>-->
+
+
+<!--flexbox container (justify content)-->
+<!---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox container</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        border: 3px solid black;
+        margin-right: 5px;
+
+    }
+    #heading{
+        margin-left: 200px;
+    }
+    #container{
+        height: 450px;
+        width: 600px;
+        padding: 10px;
+        margin: 10px;
+        
+        border: 3px solid black;
+        display: flex;
+        /* justify-content: center; */
+        /* justify-content: space-around; */
+        justify-content: space-evenly;
+        /* justify-content: end; */
+        background-color: aquamarine;
+    }
+    #box1{
+        background-color: chocolate;
+    }
+    #box2{
+        background-color: chartreuse;
+    }
+    #box3{
+        background-color: darkmagenta;
+    }
+    #box4{
+        background-color: lightcoral;
+    }
+</style>
+
+<body>
+    <h1 id="heading">flex container</h1>
+    <div id="container">
+        <div id="box1" class="box">flex box1</div>
+        <div id="box2" class="box">flex box2</div>
+        <div id="box3" class="box">flex box3</div>
+        <div id="box4" class="box">flex box4</div>
+    
+</body>
+</html>-->
+
+<!-- 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex wrap</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
+        margin-right: 5px;
+        padding: 2px;
+
+    }
+    #heading{
+        margin-left: 200px;
+    }
+    #container{
+        height: 450px;
+        width: 600px;
+        padding: 10px;
+        margin: 10px;
+        
+        border: 3px solid black;
+
+        display: flex;
+        flex-wrap: wrap;
+        
+        flex-direction: column-reverse;
+        background-color: aquamarine;
+    }
+    #box1{
+        background-color: chocolate;
+    }
+    #box2{
+        background-color: chartreuse;
+    }
+    #box3{
+        background-color: darkmagenta;
+    }
+    #box4{
+        background-color: lightcoral;
+    }
+</style>
+<body>
+    <h1 id="heading">flex container</h1>
+    <div id="container">
+        <div id="box1" class="box">flex box1</div>
+        <div id="box2" class="box">flex box2</div>
+        <div id="box3" class="box">flex box3</div>
+        <div id="box4" class="box">flex box4</div>
+</body>
+</html>-->
+
+
+
+<!--align iteams-------
+----------------------->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>container(align iteams )</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
+        margin-right: 5px;
+        padding: 2px;
+
+    }
+    #heading{
+        margin-left: 200px;
+    }
+    #container{
+        height: 450px;
+        width: 600px;
+        padding: 10px;
+        margin: 10px;
+        
+        border: 3px solid black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        flex-direction: column-reverse;
+        background-color: aquamarine;
+    }
+    #box1{
+        background-color: chocolate;
+    }
+    #box2{
+        background-color: chartreuse;
+    }
+    #box3{
+        background-color: darkmagenta;
+    }
+    #box4{
+        background-color: lightcoral;
+    }
+</style>
+<body>
+    <h1 id="heading">flex container</h1>
+    <div id="container">
+        <div id="box1" class="box">flex box1</div>
+        <div id="box2" class="box">flex box2</div>
+        <div id="box3" class="box">flex box3</div>
+        <div id="box4" class="box">flex box4</div>
+    
+</body>
+</html>-->
+
+<!--ALIGN SELF-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align (self)</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
+        margin-right: 5px;
+        padding: 2px;
+
+    }
+    #heading{
+        margin-left: 200px;
+    }
+    #container{
+        height: 450px;
+        width: 600px;
+        padding: 10px;
+        margin: 10px;
+        
+        border: 3px solid black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        flex-direction: column-reverse;
+        background-color: aquamarine;
+    }
+    #box1{
+        background-color: chocolate;
+    }
+    #box2{
+        background-color: chartreuse;
+        align-self: flex-end;
+    }
+    #box3{
+        background-color: darkmagenta;
+        align-self: center;
+    }
+    #box4{
+        background-color: lightcoral;
+        align-self: baseline;
+    }
+    </style>
+<body>
+    <h1 id="heading">flex container</h1>
+    <div id="container">
+        <div id="box1" class="box">flex box1</div>
+        <div id="box2" class="box">flex box2</div>
+        <div id="box3" class="box">flex box3</div>
+        <div id="box4" class="box">flex box4</div>
+    
+</body>
+</html> -->
+
+<!--align shrink----->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox direction</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        border: 3px solid black;
+        margin-right: 5px;
+
+    }
+    #heading{
+        margin-left: 200px;
+    }
+    #container{
+        height: 450px;
+        width: 600px;
+        padding: 10px;
+        margin: 10px;
+        
+        border: 3px solid black;
+
+        display: flex;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+        background-color: aquamarine;
+    }
+    #box1{
+        background-color: chocolate;
+    }
+    #box2{
+        background-color: chartreuse;
+    }
+    #box3{
+        background-color: darkmagenta;
+    }
+    #box4{
+        background-color: lightcoral;
+    }
+</style>
+<body>
+    <h1 id="heading">flex container</h1>
+    <div id="container">
+        <div id="box1" class="box">flex box1</div>
+        <div id="box2" class="box">flex box2</div>
+        <div id="box3" class="box">flex box3</div>
+        <div id="box4" class="box">flex box4</div>
+    </div>
+</body>
+</html>-->
+
+
+<!--flex shrink-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex shrink</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        border: 3px solid black;
+        margin-right: 5px;
+
+    }
+    #heading{
+        margin-left: 200px;
+    }
+    #container{
+        height: 450px;
+        width: 350px;
+        padding: 10px;
+        margin: 10px;
+        
+        border: 3px solid black;
+        display: flex;
+        
+        justify-content: space-evenly;
+        background-color: aquamarine;
+        text-align: center;
+        align-items: center;
+       
+    }
+    #box1{
+        background-color: chocolate;
+    }
+    #box2{
+        background-color: chartreuse;
+        flex-shrink: 2;
+    }
+    #box3{
+        background-color: darkmagenta;
+    }
+    #box4{
+        background-color: lightcoral;
+        flex-shrink: 4;
+    
+    }
+</style>
+
+<body>
+    <h1 id="heading">flex container</h1>
+    <div id="container">
+        <div id="box1" class="box">flex box1</div>
+        <div id="box2" class="box">flex box2</div>
+        <div id="box3" class="box">flex box3</div>
+        <div id="box4" class="box">flex box4</div>
+    
+</body>
+</html>
+
+<!--flex grow-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox grow</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        border: 3px solid black;
+        margin-right: 5px;
+        flex-grow: 1;
+
+    }
+    #heading{
+        margin-left: 200px;
+    }
+    #container{
+        height: 450px;
+        width: 600px;
+        padding: 10px;
+        margin: 10px;
+        
+        border: 3px solid black;
+
+        display: flex;
+        flex-direction: row;
+        
+        flex-direction:row-reverse;
+        background-color: aquamarine;
+    }
+    #box1{
+        background-color: chocolate;
+    }
+    #box2{
+        background-color: chartreuse;
+    }
+    #box3{
+        background-color: darkmagenta;
+    }
+    #box4{
+        background-color: lightcoral;
+    }
+</style>
+<body>
+    <h1 id="heading">flex container</h1>
+    <div id="container">
+        <div id="box1" class="box">flex box1</div>
+        <div id="box2" class="box">flex box2</div>
+        <div id="box3" class="box">flex box3</div>
+        <div id="box4" class="box">flex box4</div>
+    </div>
+</body>
+
+
+
+<!--flex iteams order-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox grow</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        border: 3px solid black;
+        margin-right: 5px;
+        flex-grow: 1;
+
+    }
+    #heading{
+        margin-left: 200px;
+    }
+    #container{
+        height: 450px;
+        width: 600px;
+        padding: 10px;
+        margin: 10px;
+        
+        border: 3px solid black;
+
+        display: flex;
+        flex-direction: row;
+        
+        flex-direction:row-reverse;
+        background-color: aquamarine;
+    }
+    #box1{
+        background-color: chocolate;
+        order: 2;
+    }
+    #box2{
+        background-color: chartreuse;
+        order: 4;
+    }
+    #box3{
+        background-color: darkmagenta;
+        order: 3;
+    }
+    #box4{
+        background-color: lightcoral;
+        order: 1;
+    }
+</style>
+<body>
+    <h1 id="heading">flex container</h1>
+    <div id="container">
+        <div id="box1" class="box">flex box1</div>
+        <div id="box2" class="box">flex box2</div>
+        <div id="box3" class="box">flex box3</div>
+        <div id="box4" class="box">flex box4</div>
+    </div>
+</body>
+
